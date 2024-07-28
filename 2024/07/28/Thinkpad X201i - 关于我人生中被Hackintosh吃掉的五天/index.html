@@ -31,7 +31,7 @@
 <meta property="og:image" content="https://github.com/t-vm/img_hosting/blob/main/24_7/r.png?raw=true">
 <meta property="og:image" content="https://github.com/t-vm/img_hosting/blob/main/24_7/f.png?raw=true">
 <meta property="article:published_time" content="2024-07-27T20:32:57.000Z">
-<meta property="article:modified_time" content="2024-07-28T19:31:19.348Z">
+<meta property="article:modified_time" content="2024-07-28T19:54:00.646Z">
 <meta property="article:author" content="TVEM">
 <meta property="article:tag" content="原创">
 <meta property="article:tag" content="hackintosh">
@@ -347,10 +347,11 @@
 <blockquote>
 <p>事已至此, 先睡觉吧</p>
 </blockquote>
-<h2 id="作业"><a href="#作业" class="headerlink" title="作业"></a>作业</h2><p>day2下午<br>算是想开了: 近20年过去, 黑苹果这东西已经发展出了自己的一套技术体系, 不论是clover还是opencore, 都不是花一两天能掌握到自己从零开始配置config和一堆kexts的程度的东西.</p>
+<h2 id="作业"><a href="#作业" class="headerlink" title="作业"></a>作业</h2><p>day2下午<br>算是想开了: 近20年过去, 黑苹果这东西已经发展出了自己的一套技术体系, 不论是clover还是opencore, 都不是花一两天能从啥也不会掌握到自己从零开始配置config和一堆kexts的程度的东西.</p>
 <ul>
-<li>免责声明: 至少我不能<br>所以哪有不抄作业的道理!</li>
+<li>免责声明: 至少我不能</li>
 </ul>
+<p>所以哪有不抄作业的道理! </p>
 <p>中学时代和10.12-10.15打交道的时期现在是粉红色泡泡里的good old days, 10.15成堆的黑屏死机和五国报错就当不存在, 我要装10.15! 此时的我俨然一副<strong>守序中立</strong>的姿态: 直接从头抄到尾, 今天天黑之前用上Catalina.<br><a target="_blank" rel="noopener" href="https://github.com/t-vm/Thinkpad-X201-Hackintosh-Catalina">gayhub上恰好有个repo是给x201装10.15</a>.<br>x201i是x201的廉价版本, 他们俩除了重量、扬声器、cpu和网卡之外基本没有区别.  </p>
 <ul>
 <li>CPU: 我手上这台201i是小皇帝版, 除了主频低一些之外和i5的x201差别不大, 更何况只要是同一代的话CPU这块就没什么影响</li>
@@ -371,12 +372,16 @@
 <p>有一点要说一下, 把u盘当作安装盘之前务必要拿diskgenius之类的东西删除其中所有的分区, 再格式化成macOS extend(journalized), GUID分区图.</p>
 <h2 id="混乱邪恶"><a href="#混乱邪恶" class="headerlink" title="混乱邪恶"></a>混乱邪恶</h2><p>问题果然还是出现了. 对于macOS10.15而言, 第一代酷睿i系列的<code>Arrandale</code> 平台核显无法原生驱动,因为采用这些cpu的MacBook Pro6,2(Mid 2010)已经在10.13之后被淘汰了. 所以我们需要自己打补丁. 这本身没什么问题, 是各大hackintosh&#x2F; legacy Mac 论坛的保留节目.<br>但是整个day3就这么结束了:</p>
 <ul>
-<li>原repo中的post-install方法不起作用<br>这天剩下的时间里我一直在找打补丁的方法. 期间把系统摧毁了两次, 还装了一次10.14. 但问题都没有得到解决.此时的我已经心力交瘁, 不知道该如何是好.<br>(事后回想, 这很可能是我的问题, 原repo中的post- install流程应该是可以用的, 也许我没有注意到一些细节问题)</li>
+<li>原repo中的post-install方法不起作用</li>
 </ul>
+<p>这天剩下的时间里我一直在找打补丁的方法. 期间把系统摧毁了两次, 还装了一次10.14. 但问题都没有得到解决.此时的我已经心力交瘁, 不知道该如何是好.<br>(事后回想, 这很可能是我的问题, 原repo中的post- install流程应该是可以用的, 也许我没有注意到一些细节问题)</p>
 <h3 id="繁文缛节"><a href="#繁文缛节" class="headerlink" title="繁文缛节"></a>繁文缛节</h3><p>事实上, 一直有<a target="_blank" rel="noopener" href="https://github.com/jtaczanowski/ThinkPad-X201-Arrandale-macOS-OpenCore">一个很不错的repo</a>, 也是给x201系列安装hackintosh, 但是macOS11. 我一直没用它是因为:</p>
 <ol>
 <li>守序中立, 对10.15的执念</li>
-<li>它使用OpenCore作为bootloader, 尽管这玩意是当下的趋势, 但我折腾了三天一直都在用clover.<br>但考虑到:</li>
+<li>它使用OpenCore作为bootloader, 尽管这玩意是当下的趋势, 但我折腾了三天一直都在用clover.</li>
+</ol>
+<p>但考虑到:</p>
+<ol>
 <li>我已经对10.15绝望</li>
 <li><strong>只要使用hackintosh就是婆罗门</strong><br>没错, 根据我们上面的定义, 只要装上hackintoh就是婆罗门, 就可以登上Mac用户鄙视链之巅. 版本嘛无所谓的. 之前不还试了一下10.14吗? 对于10.15忠诚不绝对就是绝对不忠诚, 让我们摒弃繁文缛节转向OC和macOS11</li>
 </ol>
@@ -385,9 +390,11 @@
 <p><code>HfsPlusLegacy.efi</code>没法正确加载. 大家都知道, 出现报错是好事, 特别是当你能理解它报了个啥的时候.<br>这东西位于OC整个包的.<code>./Volume</code>目录下, 根据经验我认为我应该把整个OC换掉, 换成另一个版本. 我根据这个hackintosh的repo第一次push的时间找到了那附近发行的OpenCore版本<code>0.8.5</code>. 然后重新做了一遍安装介质. 这次可以正确引导了.</p>
 <h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>其实装macOS11的过程中只遇到了一个问题<br>当从安装介质跑完安装器的进度条, 重新启动从硬盘安装的时候, 进度条每次都会从“剩余29分钟”开始, 读到“剩余26分钟”左右时, 砰,电脑自动关机了.<br>第一次遇到这种情况的时候我当然没当回事儿. 众所周知macOS安装过程中重启几次是很正常的.<br>但是每当我重新打开电脑, 进入安装器, 同样的事情又会再次发生.</p>
 <ul>
-<li>好得很, 现在我也是loop系作品的主角了!<br>很快我意识到并不是这样. 倒不是因为问题被解决, 而是有时候干脆都不会进入安装器, 电脑直接就黑屏了.就这样重复了不知道多少次, 没有任何进展.<br>在repo中提issue, 只有一个人回复, 还是之前10.15的repo的那位原作者. 但很遗憾, 他的回复并没有解决问题. 或者说, 是我问的有问题. 此时此刻的我以为这还是OC出了问题,使用的版本不对之类的, 毕竟有前车之鉴,而且这个警告还在:<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mipsasm"><span class="hljs-symbol">OCS:</span> No <span class="hljs-keyword">schema </span>for <span class="hljs-keyword">Block </span><span class="hljs-built_in">at</span> <span class="hljs-number">0</span> index, <span class="hljs-built_in">context</span> &lt;Emulate&gt;!<br></code></pre></td></tr></table></figure>
-于是我在issue中提出想要知道这个repo中所使用的OC的版本.</li>
+<li>好得很, 现在我也是loop系作品的主角了!</li>
 </ul>
+<p>很快我意识到并不是这样. 倒不是因为问题被解决, 而是有时候干脆都不会进入安装器, 电脑直接就黑屏了.就这样重复了不知道多少次, 没有任何进展.<br>在repo中提issue, 只有一个人回复, 还是之前10.15的repo的那位原作者. 但很遗憾, 他的回复并没有解决问题. 或者说, 是我问的有问题. 此时此刻的我以为这还是OC出了问题,使用的版本不对之类的, 毕竟有前车之鉴,而且这个警告还在:</p>
+<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mipsasm"><span class="hljs-symbol">OCS:</span> No <span class="hljs-keyword">schema </span>for <span class="hljs-keyword">Block </span><span class="hljs-built_in">at</span> <span class="hljs-number">0</span> index, <span class="hljs-built_in">context</span> &lt;Emulate&gt;!<br></code></pre></td></tr></table></figure>
+<p>于是我在issue中提出想要知道这个repo中所使用的OC的版本.</p>
 <p>那位老哥在回复中告诉我版本是<code>0.8.0</code>.于是我便使用这个版本第三次制作了安装介质, 仍然不行,  还是同样的问题. 结论是和OC的版本无关.至于那条警告, 我得知它基本上是可以忽略的, 基本上就是一个被弃用的config编辑器的锅.<br>接下来我进行了许多尝试, 比如:</p>
 <ul>
 <li>更换系统镜像</li>
@@ -395,7 +402,8 @@
 <li><code>nvram -c</code></li>
 <li>拔电池放电, 然后面<em>One Apple Park Way ,Cupertino, CA 95014</em><a href="">1</a>而拜, 圣Apple, 求求你, 我也想要成为hackintosh用户, <strong>婆罗门になりたいうた!</strong></li>
 </ul>
-<p>果然这些尝试都没什么用. 生无可恋的我在某次安装中一边失去高光对着屏幕发呆一边无意义的按键盘.<br>结果没想到进度条线下面的文字不知不觉成了“还剩25分钟”.本西西弗斯此时此刻的感觉不仅仅是石头即将滑下去前又往上移动了一点点这么简单, 而是那块石头突然长出来几个矢量喷嘴直接从山上起飞了.<br>我好像突然明白了一件事,  这个macOS11在安装的时候不知怎的也会有挂起机制, 大概三分钟左右会熄屏. 而对于hackintosh而言如何解决笔记本睡眠一直是个老大难问题. 果不其然, X201也是一样. 我猜自动关机这个状况就是挂起然后一睡不醒了.<br>我们常说人一般会优先选择最简单最愚蠢但不需要多加思考的解决方案, 手边有什么就优先用什么, it just works. 所以我选择在安装结束前的二十分钟里一直不停的按键盘防止电脑挂起.</p>
+<p>果然这些尝试都没什么用. 生无可恋的我在某次安装中一边失去高光对着屏幕发呆一边无意义的按键盘.<br>结果没想到进度条线下面的文字不知不觉成了“还剩25分钟”.本西西弗斯此时此刻感觉石头即将滑下去前的那一瞬间又往上移动了一点点.<br>我继续胡乱按键盘, 进度条也持续走着.<br>那块石头突然长出来几个矢量喷嘴直接从山上起飞了.</p>
+<p>我突然明白了一件事,  这个macOS11在安装的时候不知怎的也会有挂起机制, 大概三分钟左右会熄屏. 而对于hackintosh而言如何解决笔记本睡眠一直是个老大难问题. 果不其然, X201也是一样. 我猜自动关机这个状况就是挂起然后一睡不醒了.<br>我们常说人一般会优先选择最简单最愚蠢但不需要多加思考的解决方案, 手边有什么就优先用什么, it just works. 所以我选择在安装结束前的二十分钟里一直不停的按键盘防止电脑挂起.</p>
 <blockquote>
 <p>这期间我一直在反复观看<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1bM4m1Z7Y9/?share_source=copy_web&vd_source=fb5c2700f1bfa08d8c59fe69e79a7f63">clumsy trick</a> 和 <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV15E421j7Bu/?share_source=copy_web&vd_source=fb5c2700f1bfa08d8c59fe69e79a7f63">Luna say maybe</a>, 听说看了都说好, 赶快和我一起观看吧!</p>
 </blockquote>
@@ -462,7 +470,7 @@
 <ul>
 <li>锁扣和SD卡插槽</li>
 </ul>
-<h2 id="休息一下"><a href="#休息一下" class="headerlink" title="休息一下"></a>休息一下</h2><p>到这里, 为期五天的折腾算是完成了. 目前存在的一个问题是<code>control</code>键始终默认开启粘滞键且无法取消, 以及小红点灵敏度过高十分鬼畜, 有时候还会掉驱动. 后一个问题似乎是无解的. 至于无法合盖睡眠之类的我就不管了. 总的来说这机器目前可以投入使用.</p>
+<h2 id="休息一下"><a href="#休息一下" class="headerlink" title="休息一下"></a>休息一下</h2><p>到这里, 作为一个此前从未接触hackintosh的、尚没有脱离低级趣味的人, 我为期五天的折腾算是完成了. 目前存在的一个问题是<code>control</code>键始终默认开启粘滞键且无法取消, 以及小红点灵敏度过高十分鬼畜, 有时候还会掉驱动. 后一个问题似乎是无解的. 至于无法合盖睡眠之类的我就不管了. 总的来说这机器目前可以投入使用.</p>
 <p>这次能给各位朋友的最大建议就是: 务必在确定自己需要安装macOS后再根据兼容性挑选硬件, 而不是反过来. </p>
 <p>什么? 你说day5我在干什么? 那当然是在写这篇文章.  by the way, 很显然我现在已经是一个脱离了低级趣味的、正统的Mac婆罗门了.<br>最后祝大家身体健康, 再见</p>
 <h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ol>
