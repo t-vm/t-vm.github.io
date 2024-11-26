@@ -24,7 +24,7 @@
 <meta property="og:description" content="哎你怎么死了清空小金库拥有了一直眼馋的51nb x62，作subnote之用。在朋友的安利下安装了AOSC。x62能够使用x6* 原配的滑动式指纹识别器，生物识别对于把密码长度设置成十个以上混合字符的我是必要的，但是前阵子太忙（忙着摸鱼），并没有折腾。2024年11月25日，这是一个月黑风高的晚上，我装起了fprintd， 试图启用指纹认证。但也许是和aosc采用的最新kernel中的某些东西打架">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-11-26T13:55:31.000Z">
-<meta property="article:modified_time" content="2024-11-26T14:57:10.773Z">
+<meta property="article:modified_time" content="2024-11-26T15:02:52.535Z">
 <meta property="article:author" content="TVEM">
 <meta property="article:tag" content="原创">
 <meta property="article:tag" content="折腾">
@@ -291,13 +291,18 @@
                 <h2 id="哎你怎么死了"><a href="#哎你怎么死了" class="headerlink" title="哎你怎么死了"></a>哎你怎么死了</h2><p>清空小金库拥有了一直眼馋的51nb x62，作subnote之用。在朋友的安利下安装了AOSC。<br>x62能够使用x6* 原配的滑动式指纹识别器，生物识别对于把密码长度设置成十个以上混合字符的我是必要的，但是前阵子太忙（忙着摸鱼），并没有折腾。<br>2024年11月25日，这是一个月黑风高的晚上，我装起了<code>fprintd</code>， 试图启用指纹认证。但也许是和aosc采用的最新kernel中的某些东西打架，只能录入指纹而不能进行认证。这是因为无法使用<code>pam-auth-update</code>。</p>
 <ul>
 <li>非常邪门的，无论是用包管理工具还是手动安装，都装不上这玩意，也许还是各种依赖项可乐曼妥思了。</li>
-<li>遂尝试手动更改配置文件，依旧不行。<br>以上内容对于本篇blog并不重要，直接促成了这个网页中的文字垃圾的事件是：万策尽的本epic big brain开始手动编译一些工具。在这个过程中反手<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo oma remove audit<br></code></pre></td></tr></table></figure>
-当场头部以下截肢了。</li>
+<li>遂尝试手动更改配置文件，依旧不行。</li>
 </ul>
+<p>以上内容对于本篇blog并不重要，直接促成了这个网页中的文字垃圾的事件是：万策尽的本epic big brain开始手动编译一些工具。在这个过程中反手</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo oma remove audit<br></code></pre></td></tr></table></figure>
+<p>当场头部以下截肢了。</p>
 <h3 id="尸检报告"><a href="#尸检报告" class="headerlink" title="尸检报告"></a>尸检报告</h3><p>可喜可贺，可喜可贺。现在我们只要涉及到用户认证相关操作，就会得到<code>PAM 认证出错：模块未知</code>.所以很显然此时：</p>
 <ul>
 <li>无法使用任何需要管理员权限的功能，su不了do了。</li>
-<li>当然也无法登录系统<br>所以这位icu中的病人自然只要关机就会断气<br>然后我关机了。</li>
+<li>当然也无法登录系统</li>
+</ul>
+<p>所以这位icu中的病人自然只要关机就会断气<br>然后我关机了。</p>
+<ul>
 <li>啊啊，只能说依我看这时候就算不关机也没什么办法，不能通过任何方式安装软件包，<code>oma undo</code>这种防呆机制也没用，rollback也还是要<strong>安装</strong>的啊</li>
 </ul>
 <h2 id="（心肺苏生法）"><a href="#（心肺苏生法）" class="headerlink" title="（心肺苏生法）"></a>（心肺苏生法）</h2><p>亘古不变的真理就是缺啥补啥。所以让我们来重新安装 PAM 和 SUDO 相关的包。<br>经过一番冲浪，参考过网友的<a target="_blank" rel="noopener" href="https://bbs.deepin.org/en/post/223374">使用双系统的补救方法</a>  后，遂采用相近思路：</p>
@@ -323,8 +328,9 @@
 <h2 id="依旧存在的问题"><a href="#依旧存在的问题" class="headerlink" title="依旧存在的问题"></a>依旧存在的问题</h2><p>现在这套系统基本运行良好，但是还有两个问题亟待解决：</p>
 <ol>
 <li>ax210网卡睡眠唤醒后必死，只能用蓝牙而wifi不工作。该问题几天前已报告</li>
-<li>指纹还是用不了，bruh<br>（完）</li>
+<li>指纹还是用不了，bruh</li>
 </ol>
+<p>（完）</p>
 <h2 id="references"><a href="#references" class="headerlink" title="references"></a>references</h2><ol>
 <li><a target="_blank" rel="noopener" href="https://bbs.deepin.org/en/post/223374">https://bbs.deepin.org/en/post/223374</a></li>
 </ol>
