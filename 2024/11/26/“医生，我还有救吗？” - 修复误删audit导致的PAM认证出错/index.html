@@ -16,23 +16,25 @@
   <meta name="author" content="TVEM">
   <meta name="keywords" content="">
   
-    <meta name="description" content="MADE BY CHATGPT  本文的大部分或全部内容由AI生成  hexo命令备忘录, 随用随查, 内容随时更新 常用命令创建新blog文章 创建一篇新的文章，文章文件会被放在 source&#x2F;_posts 目录下。    1hexo new post &quot;文章标题&quot; 简写：    1hexo n post &quot;文章标题&quot;  创建一个新的页面（如“关于”页面）">
+    <meta name="description" content="哎你怎么死了清空小金库拥有了一直眼馋的51nb x62，作subnote之用。在朋友的安利下安装了AOSC。x62能够使用x6* 原配的滑动式指纹识别器，生物识别对于把密码长度设置成十个以上混合字符的我是必要的，但是前阵子太忙（忙着摸鱼），并没有折腾。2024年11月25日，这是一个月黑风高的晚上，我装起了fprintd， 试图启用指纹认证。但也许是和aosc采用的最新kernel中的某些东西打架">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo基本命令速查">
-<meta property="og:url" content="http://example.com/2024/07/29/hexo%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/index.html">
+<meta property="og:title" content="“医生，我还有救吗？” - 修复误删audit导致的PAM认证出错">
+<meta property="og:url" content="http://example.com/2024/11/26/%E2%80%9C%E5%8C%BB%E7%94%9F%EF%BC%8C%E6%88%91%E8%BF%98%E6%9C%89%E6%95%91%E5%90%97%EF%BC%9F%E2%80%9D%20-%20%E4%BF%AE%E5%A4%8D%E8%AF%AF%E5%88%A0audit%E5%AF%BC%E8%87%B4%E7%9A%84PAM%E8%AE%A4%E8%AF%81%E5%87%BA%E9%94%99/index.html">
 <meta property="og:site_name" content="TveMatchbox">
-<meta property="og:description" content="MADE BY CHATGPT  本文的大部分或全部内容由AI生成  hexo命令备忘录, 随用随查, 内容随时更新 常用命令创建新blog文章 创建一篇新的文章，文章文件会被放在 source&#x2F;_posts 目录下。    1hexo new post &quot;文章标题&quot; 简写：    1hexo n post &quot;文章标题&quot;  创建一个新的页面（如“关于”页面）">
+<meta property="og:description" content="哎你怎么死了清空小金库拥有了一直眼馋的51nb x62，作subnote之用。在朋友的安利下安装了AOSC。x62能够使用x6* 原配的滑动式指纹识别器，生物识别对于把密码长度设置成十个以上混合字符的我是必要的，但是前阵子太忙（忙着摸鱼），并没有折腾。2024年11月25日，这是一个月黑风高的晚上，我装起了fprintd， 试图启用指纹认证。但也许是和aosc采用的最新kernel中的某些东西打架">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-07-28T21:32:25.000Z">
-<meta property="article:modified_time" content="2024-07-28T21:44:36.695Z">
+<meta property="article:published_time" content="2024-11-26T13:55:31.000Z">
+<meta property="article:modified_time" content="2024-11-26T14:57:10.773Z">
 <meta property="article:author" content="TVEM">
-<meta property="article:tag" content="blog建设">
-<meta property="article:tag" content="ai生成">
+<meta property="article:tag" content="原创">
+<meta property="article:tag" content="折腾">
+<meta property="article:tag" content="software">
+<meta property="article:tag" content="linux&#x2F;unix">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Hexo基本命令速查 - TveMatchbox</title>
+  <title>“医生，我还有救吗？” - 修复误删audit导致的PAM认证出错 - TveMatchbox</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -210,7 +212,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Hexo基本命令速查"></span>
+            <span id="subtitle" data-typed-text="“医生，我还有救吗？” - 修复误删audit导致的PAM认证出错"></span>
           
         </div>
 
@@ -221,8 +223,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-07-29 05:32" pubdate>
-          2024年7月29日 凌晨
+        <time datetime="2024-11-26 21:55" pubdate>
+          2024年11月26日 晚上
         </time>
       </span>
     
@@ -233,7 +235,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          357 字
+          842 字
         
       </span>
     
@@ -244,7 +246,7 @@
         
         
         
-          3 分钟
+          8 分钟
         
       </span>
     
@@ -281,65 +283,51 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Hexo基本命令速查</h1>
+            <h1 id="seo-header">“医生，我还有救吗？” - 修复误删audit导致的PAM认证出错</h1>
             
             
               <div class="markdown-body">
                 
-                <p>MADE BY CHATGPT</p>
-<blockquote>
-<p>本文的大部分或全部内容由AI生成</p>
-</blockquote>
-<p>hexo命令备忘录, 随用随查, 内容随时更新</p>
-<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><h3 id="创建新blog文章"><a href="#创建新blog文章" class="headerlink" title="创建新blog文章"></a>创建新blog文章</h3><ul>
-<li><p>创建一篇新的文章，文章文件会被放在 <code>source/_posts</code> 目录下。</p>
-   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo new post <span class="hljs-string">&quot;文章标题&quot;</span><br></code></pre></td></tr></table></figure></li>
-<li><p>简写：</p>
-   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo n post <span class="hljs-string">&quot;文章标题&quot;</span><br></code></pre></td></tr></table></figure>
-</li>
-<li><p>创建一个新的页面（如“关于”页面），页面文件会被放在 <code>source</code> 目录下。</p>
-   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo new page <span class="hljs-string">&quot;页面名称&quot;</span><br></code></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><ul>
-<li>生成博客的静态文件，生成的文件会放在 <code>public</code> 目录下。   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo generate<br></code></pre></td></tr></table></figure></li>
-<li>简写：   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo g<br></code></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="启动本地服务器"><a href="#启动本地服务器" class="headerlink" title="启动本地服务器"></a>启动本地服务器</h3><ul>
-<li>启动一个本地服务器，通常用于预览博客。默认情况下，服务器会运行在 <code>http://localhost:4000</code>。   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo server<br></code></pre></td></tr></table></figure></li>
-<li>简写：   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo s<br></code></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="清除缓存"><a href="#清除缓存" class="headerlink" title="清除缓存"></a>清除缓存</h3><ul>
-<li>清除 <code>public</code> 目录和缓存文件，通常在生成文件前使用，以确保生成的文件是最新的。   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo clean<br></code></pre></td></tr></table></figure></li>
-<li>简写：   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo clean<br></code></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><ul>
-<li>将生成的静态文件部署到远程服务器   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo deploy<br></code></pre></td></tr></table></figure></li>
-<li>简写：   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo d<br></code></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="未发布草稿"><a href="#未发布草稿" class="headerlink" title="未发布草稿"></a>未发布草稿</h3><ul>
-<li>列出所有未发布的草稿。   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo list draft<br></code></pre></td></tr></table></figure></li>
-</ul>
-<ol start="2">
-<li><strong>发布草稿</strong>：<ul>
-<li>将草稿发布为正式文章。<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo publish <span class="hljs-string">&quot;草稿名称&quot;</span><br></code></pre></td></tr></table></figure></li>
-</ul>
-</li>
-</ol>
-<h3 id="help"><a href="#help" class="headerlink" title="help"></a>help</h3><ul>
-<li>查看 Hexo 命令的帮助信息。   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo <span class="hljs-built_in">help</span><br></code></pre></td></tr></table></figure></li>
-<li>简写：   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo h<br></code></pre></td></tr></table></figure></li>
-</ul>
-<h2 id="命令组合"><a href="#命令组合" class="headerlink" title="命令组合"></a>命令组合</h2><p>可以将多个命令组合在一起使用，例如：</p>
+                <h2 id="哎你怎么死了"><a href="#哎你怎么死了" class="headerlink" title="哎你怎么死了"></a>哎你怎么死了</h2><p>清空小金库拥有了一直眼馋的51nb x62，作subnote之用。在朋友的安利下安装了AOSC。<br>x62能够使用x6* 原配的滑动式指纹识别器，生物识别对于把密码长度设置成十个以上混合字符的我是必要的，但是前阵子太忙（忙着摸鱼），并没有折腾。<br>2024年11月25日，这是一个月黑风高的晚上，我装起了<code>fprintd</code>， 试图启用指纹认证。但也许是和aosc采用的最新kernel中的某些东西打架，只能录入指纹而不能进行认证。这是因为无法使用<code>pam-auth-update</code>。</p>
 <ul>
-<li><p>清除生成的文件并重新生成：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo clean &amp;&amp; hexo generate<br></code></pre></td></tr></table></figure>
-</li>
-<li><p>生成文件并启动本地服务器：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo generate &amp;&amp; hexo server<br></code></pre></td></tr></table></figure>
-</li>
-<li><p>生成文件并部署：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo generate &amp;&amp; hexo deploy<br></code></pre></td></tr></table></figure></li>
+<li>非常邪门的，无论是用包管理工具还是手动安装，都装不上这玩意，也许还是各种依赖项可乐曼妥思了。</li>
+<li>遂尝试手动更改配置文件，依旧不行。<br>以上内容对于本篇blog并不重要，直接促成了这个网页中的文字垃圾的事件是：万策尽的本epic big brain开始手动编译一些工具。在这个过程中反手<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo oma remove audit<br></code></pre></td></tr></table></figure>
+当场头部以下截肢了。</li>
 </ul>
+<h3 id="尸检报告"><a href="#尸检报告" class="headerlink" title="尸检报告"></a>尸检报告</h3><p>可喜可贺，可喜可贺。现在我们只要涉及到用户认证相关操作，就会得到<code>PAM 认证出错：模块未知</code>.所以很显然此时：</p>
+<ul>
+<li>无法使用任何需要管理员权限的功能，su不了do了。</li>
+<li>当然也无法登录系统<br>所以这位icu中的病人自然只要关机就会断气<br>然后我关机了。</li>
+<li>啊啊，只能说依我看这时候就算不关机也没什么办法，不能通过任何方式安装软件包，<code>oma undo</code>这种防呆机制也没用，rollback也还是要<strong>安装</strong>的啊</li>
+</ul>
+<h2 id="（心肺苏生法）"><a href="#（心肺苏生法）" class="headerlink" title="（心肺苏生法）"></a>（心肺苏生法）</h2><p>亘古不变的真理就是缺啥补啥。所以让我们来重新安装 PAM 和 SUDO 相关的包。<br>经过一番冲浪，参考过网友的<a target="_blank" rel="noopener" href="https://bbs.deepin.org/en/post/223374">使用双系统的补救方法</a>  后，遂采用相近思路：</p>
+<h3 id="挂载系统盘"><a href="#挂载系统盘" class="headerlink" title="挂载系统盘"></a>挂载系统盘</h3><ul>
+<li>创建一个AOSC安装介质插上，u盘启动，然后选择急救</li>
+<li>进入 LiveKit，打开终端</li>
+<li>用 <code>lsblk</code> 找到硬盘中系统的根分区（<code>/dev/sda1</code> 或类似，这里就以这个为例）</li>
+<li>挂载<strong>系统盘根分区</strong>为 <code>/mnt</code><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo mount /dev/sda1 /mnt<br></code></pre></td></tr></table></figure></li>
+</ul>
+<p>把我们接下来在<code>/mnt</code>下操作时要访问的、当前救援环境里的东西挂载入虚拟文件系统。</p>
+<ul>
+<li>现在livekit的 <code>/dev</code>、<code>/proc</code> 和 <code>/sys</code> 目录被绑定到 <code>/mnt</code> 目录下对应的子目录 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo mount --<span class="hljs-built_in">bind</span> /dev /mnt/dev<br>sudo mount --<span class="hljs-built_in">bind</span> /proc /mnt/proc<br>sudo mount --<span class="hljs-built_in">bind</span> /sys /mnt/sys<br></code></pre></td></tr></table></figure></li>
+</ul>
+<p>进入 <code>chroot</code> 环境， 把我们挂载为<code>/mnt</code>的分区映射为虚拟环境的根分区<code>/</code><br>   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo <span class="hljs-built_in">chroot</span> /mnt<br></code></pre></td></tr></table></figure></p>
+<h3 id="重装"><a href="#重装" class="headerlink" title="重装"></a>重装</h3><p>好了，现在我们可以在被隔离出来的chroot环境里重新安装 PAM 和 SUDO了</p>
+<ul>
+<li>先联网</li>
+<li>肌肉记忆之更新包索引, 不知为何我没能成功更新，也许是网络抽风了<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">apt update<br></code></pre></td></tr></table></figure>
+重装<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">apt install --reinstall libpam0g sudo<br></code></pre></td></tr></table></figure></li>
+</ul>
+<p>最后退出chroot，解除挂载，重启<br>   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">exit</span><br>sudo umount /mnt/dev<br>sudo umount /mnt/proc<br>sudo umount /mnt/sys<br>sudo umount /mnt<br>sudo reboot<br></code></pre></td></tr></table></figure></p>
+<p>嗯…金杰活了。</p>
+<h2 id="依旧存在的问题"><a href="#依旧存在的问题" class="headerlink" title="依旧存在的问题"></a>依旧存在的问题</h2><p>现在这套系统基本运行良好，但是还有两个问题亟待解决：</p>
+<ol>
+<li>ax210网卡睡眠唤醒后必死，只能用蓝牙而wifi不工作。该问题几天前已报告</li>
+<li>指纹还是用不了，bruh<br>（完）</li>
+</ol>
+<h2 id="references"><a href="#references" class="headerlink" title="references"></a>references</h2><ol>
+<li><a target="_blank" rel="noopener" href="https://bbs.deepin.org/en/post/223374">https://bbs.deepin.org/en/post/223374</a></li>
+</ol>
 
                 
               </div>
@@ -348,41 +336,17 @@
             <div>
               <div class="post-metas my-3">
   
-    <div class="post-meta mr-3 d-flex align-items-center">
-      <i class="iconfont icon-category"></i>
-      
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/" class="category-chain-item"></a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/notes/" class="category-chain-item">notes</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-    </div>
-  
   
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/blog%E5%BB%BA%E8%AE%BE/" class="print-no-link">#blog建设</a>
+        <a href="/tags/%E5%8E%9F%E5%88%9B/" class="print-no-link">#原创</a>
       
-        <a href="/tags/ai%E7%94%9F%E6%88%90/" class="print-no-link">#ai生成</a>
+        <a href="/tags/%E6%8A%98%E8%85%BE/" class="print-no-link">#折腾</a>
+      
+        <a href="/tags/software/" class="print-no-link">#software</a>
+      
+        <a href="/tags/linux-unix/" class="print-no-link">#linux/unix</a>
       
     </div>
   
@@ -394,8 +358,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Hexo基本命令速查</div>
-      <div>http://example.com/2024/07/29/hexo基本命令速查/</div>
+      <div>“医生，我还有救吗？” - 修复误删audit导致的PAM认证出错</div>
+      <div>http://example.com/2024/11/26/“医生，我还有救吗？” - 修复误删audit导致的PAM认证出错/</div>
     </div>
     <div class="license-meta">
       
@@ -407,7 +371,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2024年7月29日</div>
+          <div>2024年11月26日</div>
         </div>
       
       
@@ -439,18 +403,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/07/30/Nintendo%203DS%20&amp;%20new3DS%20LL%20-%20%E7%8E%A9%E6%B8%B8%E6%88%8F%E4%B8%8E%E7%9A%88%E4%BE%9D%E8%80%85%E7%8B%82%E7%83%AD/" title="Nintendo 3DS &amp; new3DS LL - “玩游戏与皈依者狂热”">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Nintendo 3DS &amp; new3DS LL - “玩游戏与皈依者狂热”</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/07/28/Thinkpad%20X201i%20-%20%E5%85%B3%E4%BA%8E%E6%88%91%E4%BA%BA%E7%94%9F%E4%B8%AD%E8%A2%ABHackintosh%E5%90%83%E6%8E%89%E7%9A%84%E4%BA%94%E5%A4%A9/" title="Thinkpad X201i - 关于我人生中被Hackintosh吃掉的五天">
-                        <span class="hidden-mobile">Thinkpad X201i - 关于我人生中被Hackintosh吃掉的五天</span>
+                      <a href="/2024/07/30/Nintendo%203DS%20&amp;%20new3DS%20LL%20-%20%E7%8E%A9%E6%B8%B8%E6%88%8F%E4%B8%8E%E7%9A%88%E4%BE%9D%E8%80%85%E7%8B%82%E7%83%AD/" title="Nintendo 3DS &amp; new3DS LL - “玩游戏与皈依者狂热”">
+                        <span class="hidden-mobile">Nintendo 3DS &amp; new3DS LL - “玩游戏与皈依者狂热”</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
