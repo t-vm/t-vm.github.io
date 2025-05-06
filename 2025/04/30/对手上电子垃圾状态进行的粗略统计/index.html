@@ -16,25 +16,23 @@
   <meta name="author" content="TVEM">
   <meta name="keywords" content="">
   
-    <meta name="description" content="哎你怎么死了清空小金库拥有了一直眼馋的51nb x62，作subnote之用。在朋友的安利下安装了AOSC。x62能够使用x6* 原配的滑动式指纹识别器，生物识别对于把密码长度设置成十个以上混合字符的我是必要的，但是前阵子太忙（忙着摸鱼），并没有折腾。2024年11月25日，这是一个月黑风高的晚上，我装起了fprintd， 试图启用指纹认证。但也许是和aosc采用的最新kernel中的某些东西打架">
+    <meta name="description" content="不幸地，这篇文章已经太监了，让我们为它默哀两个普朗克时间（还是得打个表才行，这么写用处不大） 眼下度过了一个充斥着求职琐事的三月和一个极度低效的四月，又在四月底的某天晚上下单了一台从垃圾场来的 SIEMENS NIXDORF Mobile 300之后，我瞥了一眼墙角的若干大纸箱，明白随着手上设备的增多，一些工作势在必行了。 做什么 打表，统计手上设备的状态 写这篇文章 按照状态对所有东西装箱分箱">
 <meta property="og:type" content="article">
-<meta property="og:title" content="“医生，我还有救吗？” - 修复误删audit导致的PAM认证出错">
-<meta property="og:url" content="http://example.com/2024/11/26/%E2%80%9C%E5%8C%BB%E7%94%9F%EF%BC%8C%E6%88%91%E8%BF%98%E6%9C%89%E6%95%91%E5%90%97%EF%BC%9F%E2%80%9D%20-%20%E4%BF%AE%E5%A4%8D%E8%AF%AF%E5%88%A0audit%E5%AF%BC%E8%87%B4%E7%9A%84PAM%E8%AE%A4%E8%AF%81%E5%87%BA%E9%94%99/index.html">
+<meta property="og:title" content="对手上电子垃圾状态进行的粗略统计">
+<meta property="og:url" content="http://example.com/2025/04/30/%E5%AF%B9%E6%89%8B%E4%B8%8A%E7%94%B5%E5%AD%90%E5%9E%83%E5%9C%BE%E7%8A%B6%E6%80%81%E8%BF%9B%E8%A1%8C%E7%9A%84%E7%B2%97%E7%95%A5%E7%BB%9F%E8%AE%A1/index.html">
 <meta property="og:site_name" content="TveMatchbox">
-<meta property="og:description" content="哎你怎么死了清空小金库拥有了一直眼馋的51nb x62，作subnote之用。在朋友的安利下安装了AOSC。x62能够使用x6* 原配的滑动式指纹识别器，生物识别对于把密码长度设置成十个以上混合字符的我是必要的，但是前阵子太忙（忙着摸鱼），并没有折腾。2024年11月25日，这是一个月黑风高的晚上，我装起了fprintd， 试图启用指纹认证。但也许是和aosc采用的最新kernel中的某些东西打架">
+<meta property="og:description" content="不幸地，这篇文章已经太监了，让我们为它默哀两个普朗克时间（还是得打个表才行，这么写用处不大） 眼下度过了一个充斥着求职琐事的三月和一个极度低效的四月，又在四月底的某天晚上下单了一台从垃圾场来的 SIEMENS NIXDORF Mobile 300之后，我瞥了一眼墙角的若干大纸箱，明白随着手上设备的增多，一些工作势在必行了。 做什么 打表，统计手上设备的状态 写这篇文章 按照状态对所有东西装箱分箱">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-11-26T13:55:31.000Z">
-<meta property="article:modified_time" content="2024-11-26T17:23:25.937Z">
+<meta property="article:published_time" content="2025-04-30T07:13:00.000Z">
+<meta property="article:modified_time" content="2025-05-06T08:46:04.432Z">
 <meta property="article:author" content="TVEM">
-<meta property="article:tag" content="原创">
-<meta property="article:tag" content="折腾">
-<meta property="article:tag" content="software">
-<meta property="article:tag" content="linux&#x2F;unix">
+<meta property="article:tag" content="hardware">
+<meta property="article:tag" content="电子垃圾colle">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>“医生，我还有救吗？” - 修复误删audit导致的PAM认证出错 - TveMatchbox</title>
+  <title>对手上电子垃圾状态进行的粗略统计 - TveMatchbox</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -212,7 +210,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="“医生，我还有救吗？” - 修复误删audit导致的PAM认证出错"></span>
+            <span id="subtitle" data-typed-text="对手上电子垃圾状态进行的粗略统计"></span>
           
         </div>
 
@@ -223,8 +221,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-11-26 21:55" pubdate>
-          2024年11月26日 晚上
+        <time datetime="2025-04-30 15:13" pubdate>
+          2025年4月30日 下午
         </time>
       </span>
     
@@ -235,7 +233,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          840 字
+          1.3k 字
         
       </span>
     
@@ -246,7 +244,7 @@
         
         
         
-          8 分钟
+          11 分钟
         
       </span>
     
@@ -283,56 +281,148 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">“医生，我还有救吗？” - 修复误删audit导致的PAM认证出错</h1>
+            <h1 id="seo-header">对手上电子垃圾状态进行的粗略统计</h1>
             
             
               <div class="markdown-body">
                 
-                <h2 id="哎你怎么死了"><a href="#哎你怎么死了" class="headerlink" title="哎你怎么死了"></a>哎你怎么死了</h2><p>清空小金库拥有了一直眼馋的51nb x62，作subnote之用。在朋友的安利下安装了AOSC。<br>x62能够使用x6* 原配的滑动式指纹识别器，生物识别对于把密码长度设置成十个以上混合字符的我是必要的，但是前阵子太忙（忙着摸鱼），并没有折腾。<br>2024年11月25日，这是一个月黑风高的晚上，我装起了<code>fprintd</code>， 试图启用指纹认证。但也许是和aosc采用的最新kernel中的某些东西打架，只能录入指纹而不能进行认证。这是因为无法使用<code>pam-auth-update</code>。</p>
-<ul>
-<li>非常邪门的，无论是用包管理工具还是手动安装，都装不上这玩意，也许还是各种依赖项可乐曼妥思了。</li>
-<li>遂尝试手动更改配置文件，依旧不行。</li>
-</ul>
-<p>以上内容对于本篇blog并不重要，直接促成了这个网页中的文字垃圾的事件是：万策尽的本epic big brain开始手动编译一些工具。在这个过程中反手</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo oma remove audit<br></code></pre></td></tr></table></figure>
-<p>当场头部以下截肢了。</p>
-<h3 id="尸检报告"><a href="#尸检报告" class="headerlink" title="尸检报告"></a>尸检报告</h3><p>可喜可贺，可喜可贺。现在我们只要涉及到用户认证相关操作，就会得到<code>PAM 认证出错：模块未知</code>.所以很显然此时：</p>
-<ul>
-<li>无法使用任何需要管理员权限的功能，su不了do了。</li>
-<li>当然也无法登录系统</li>
-</ul>
-<p>所以这位icu中的病人自然只要关机就会断气<br>然后我关机了。</p>
-<ul>
-<li>啊啊，只能说依我看这时候就算不关机也没什么办法，不能通过任何方式安装软件包，<code>oma undo</code>这种防呆机制也没用，rollback也还是要<strong>安装</strong>的啊</li>
-</ul>
-<h2 id="（心肺苏生法）"><a href="#（心肺苏生法）" class="headerlink" title="（心肺苏生法）"></a>（心肺苏生法）</h2><p>亘古不变的真理就是缺啥补啥。所以让我们来重新安装 PAM 和 SUDO 相关的包。<br>经过一番冲浪，参考过网友的<a target="_blank" rel="noopener" href="https://bbs.deepin.org/en/post/223374">使用双系统的补救方法</a>  后，遂采用相近思路：</p>
-<h3 id="挂载系统盘"><a href="#挂载系统盘" class="headerlink" title="挂载系统盘"></a>挂载系统盘</h3><ul>
-<li>创建一个AOSC安装介质插上，u盘启动，然后选择急救</li>
-<li>进入 LiveKit，打开终端</li>
-<li>用 <code>lsblk</code> 找到硬盘中系统的根分区（<code>/dev/sda1</code> 或类似，这里就以这个为例）</li>
-<li>挂载<strong>系统盘根分区</strong>为 <code>/mnt</code><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo mount /dev/sda1 /mnt<br></code></pre></td></tr></table></figure></li>
-</ul>
-<p>把我们接下来在<code>/mnt</code>下操作时要访问的、当前救援环境里的东西挂载入虚拟文件系统。</p>
-<ul>
-<li>现在livekit的 <code>/dev</code>、<code>/proc</code> 和 <code>/sys</code> 目录被绑定到 <code>/mnt</code> 目录下对应的子目录 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo mount --<span class="hljs-built_in">bind</span> /dev /mnt/dev<br>sudo mount --<span class="hljs-built_in">bind</span> /proc /mnt/proc<br>sudo mount --<span class="hljs-built_in">bind</span> /sys /mnt/sys<br></code></pre></td></tr></table></figure></li>
-</ul>
-<p>进入 <code>chroot</code> 环境， 把我们挂载为<code>/mnt</code>的分区映射为虚拟环境的根分区<code>/</code><br>   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo <span class="hljs-built_in">chroot</span> /mnt<br></code></pre></td></tr></table></figure></p>
-<h3 id="重装"><a href="#重装" class="headerlink" title="重装"></a>重装</h3><p>好了，现在我们可以在被隔离出来的chroot环境里重新安装 PAM 和 SUDO了</p>
-<ul>
-<li>先联网</li>
-<li>肌肉记忆之更新包索引, 不知为何我没能成功更新，也许是网络抽风了<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">apt update<br></code></pre></td></tr></table></figure>
-重装<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">apt install --reinstall libpam0g sudo<br></code></pre></td></tr></table></figure></li>
-</ul>
-<p>最后退出chroot，解除挂载，重启<br>   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">exit</span><br>sudo umount /mnt/dev<br>sudo umount /mnt/proc<br>sudo umount /mnt/sys<br>sudo umount /mnt<br>sudo reboot<br></code></pre></td></tr></table></figure></p>
-<p>嗯…活了。</p>
-<h2 id="依旧存在的问题"><a href="#依旧存在的问题" class="headerlink" title="依旧存在的问题"></a>依旧存在的问题</h2><p>现在这套系统基本运行良好，但是还有两个问题亟待解决：</p>
-<ol>
-<li>ax210网卡睡眠唤醒后必死，只能用蓝牙而wifi不工作。该问题几天前已报告</li>
-<li>指纹还是用不了，bruh</li>
+                <p>不幸地，这篇文章已经太监了，让我们为它默哀两个普朗克时间<br>（还是得打个表才行，这么写用处不大）</p>
+<h2 id="眼下"><a href="#眼下" class="headerlink" title="眼下"></a>眼下</h2><p>度过了一个充斥着求职琐事的三月和一个极度低效的四月，又在四月底的某天晚上下单了一台从垃圾场来的 SIEMENS NIXDORF Mobile 300之后，我瞥了一眼墙角的若干大纸箱，明白随着手上设备的增多，一些工作势在必行了。</p>
+<h3 id="做什么"><a href="#做什么" class="headerlink" title="做什么"></a>做什么</h3><ol>
+<li>打表，统计手上设备的状态</li>
+<li>写这篇文章</li>
+<li>按照<strong>状态</strong>对所有东西装箱分箱</li>
 </ol>
-<p>（完）</p>
-<h2 id="references"><a href="#references" class="headerlink" title="references"></a>references</h2><ol>
-<li><a target="_blank" rel="noopener" href="https://bbs.deepin.org/en/post/223374">https://bbs.deepin.org/en/post/223374</a></li>
+<h2 id="简单的统计"><a href="#简单的统计" class="headerlink" title="简单的统计"></a>简单的统计</h2><p>下面是截至这篇文章发表之时对我手上的全部可以被归类为“vintage”的设备的粗略统计。包括他们的当下状态、数量、意向去向这类基本信息。我会分为<em>无法启动的设备</em>和<em>可以启动的设备</em>这两大类来写。<br>呃，虽然但是在本文里我连表格都懒得做，令人感叹。</p>
+<h3 id="可以启动的设备"><a href="#可以启动的设备" class="headerlink" title="可以启动的设备"></a>可以启动的设备</h3><ol>
+<li>IBM ThinkPad T43p，14’’&#x2F;2.13&#x2F;2G<ol>
+<li>来源：货场</li>
+<li>外观状态：佳，A面类肤质涂层有两道划痕</li>
+<li>OS：Debian12</li>
+<li>功能：可以启动，有故障</li>
+<li>故障类型：不认硬盘，可能是南桥问题或者sata2pata的ic脱焊。后者可能性大</li>
+<li>备注：光盘和u盘能认</li>
+<li>预计处理方式：维修</li>
+</ol>
+</li>
+<li>IBM ThinkPad X32&#x2F;1.7&#x2F;2G<ol>
+<li>来源：货场；拼好机</li>
+<li>外观状态：佳，缺螺丝盖片</li>
+<li>OS：windowsXP SP1（IBM OEM）</li>
+<li>功能：全部正常，网卡驱动没打</li>
+<li>预计处理方式：改固态盘</li>
+</ol>
+</li>
+<li>IBM ThinkPad A31p&#x2F;2.4&#x2F;2G<ol>
+<li>来源：货场&amp;奸商；拼好机</li>
+<li>外观状态：一般，缺螺丝盖片，屏幕轻度发黄</li>
+<li>OS：windowsXP SP3（IBM OEM）</li>
+<li>功能：可启动有故障</li>
+<li>故障类型：电芯自锁</li>
+<li>预计处理方式：修电池后保留</li>
+</ol>
+</li>
+<li>ThinkPad W700ds(FVT)&#x2F;2.4(QX9200)&#x2F;fx3700m&#x2F;8G<ol>
+<li>来源：货场</li>
+<li>外观状态：差，防滚架一处断裂（显卡风扇处），电池仓有一处缺肉，A壳不可逆老化发白，屏幕偏光膜（内）大量污渍</li>
+<li>OS：Windows vista（Lenovo OEM）</li>
+<li>功能：可启动有故障</li>
+<li>故障类型：小键盘损坏（排线断）、Fan ERR（有备件；有时fan1有时fan2，前者9成）</li>
+<li>备注：FVT阶段工程机，单屏幕，无电池</li>
+<li>预计处理方式：飞排线、换屏幕面板，维修后永久保留</li>
+</ol>
+</li>
+<li>51NB ThinkPad X62&#x2F;i5 5600U&#x2F;16G<ol>
+<li>来源：二手卖家</li>
+<li>外观状态：差</li>
+<li>OS：AOSC</li>
+<li>功能：可启动有故障</li>
+<li>故障类型：thinklight损坏</li>
+<li>备注：服役中</li>
+<li>预计处理方式：更换外壳和屏显后保留</li>
+</ol>
+</li>
+<li>ThinkPad 760EL（太久没动配置忘了）<ol>
+<li>来源：二手卖家；拼好机</li>
+<li>外观状态：差</li>
+<li>OS：暂无</li>
+<li>功能：可启动有故障</li>
+<li>故障类型：电池健康度耗尽、cmos没电</li>
+<li>备注：<strong>镍氢忘拆了！镍氢忘拆了！镍氢忘拆了！</strong></li>
+<li>预计处理方式：喷漆，拆镍氢、修电芯、换装CF card固态盘后保留</li>
+</ol>
+</li>
+<li>TOSHIBA libretto W100（工程机)&#x2F;i5 520UM&#x2F;2G<ol>
+<li>来源：货场</li>
+<li>外观状态：一般</li>
+<li>OS：Windows7（TOSHIBA OEM）</li>
+<li>功能：可启动有故障</li>
+<li>故障类型：电芯自锁、上屏触摸有断触（宽度2-3cm）</li>
+<li>备注：所属工程阶段不明；因散热设计缺陷换成了量产版A壳，原壳装在配件机上</li>
+<li>预计处理方式：装win8、修电芯，为不破坏工程机特殊外观上屏断触问题暂时弃疗；永久保留</li>
+</ol>
+</li>
+<li>TOSHIBA libretto W100&#x2F;u5400&#x2F;2G<ol>
+<li>来源：二手卖家</li>
+<li>外观状态：极佳</li>
+<li>OS：Windows7（TOSHIBA OEM）</li>
+<li>功能：可启动有故障</li>
+<li>故障类型：电芯自锁</li>
+<li>预计处理方式：出售或赠送</li>
+</ol>
+</li>
+<li>TOSHIBA libretto W100&#x2F;u5400&#x2F;2G<ol>
+<li>来源：货场</li>
+<li>外观状态：一般</li>
+<li>OS：无</li>
+<li>功能：可启动有故障</li>
+<li>故障类型：触摸坏、屏线无、硬盘无、电池无</li>
+<li>备注：a壳是工程机的；配件机</li>
+<li>预计处理方式：保留</li>
+</ol>
+</li>
+<li>SONY VAIO PCG-U1&#x2F;TM5800&#x2F;256m<ol>
+<li>来源：货场</li>
+<li>外观状态：较差：掉漆，缺少脚垫、垫片融化、缺键帽和摇杆</li>
+<li>OS：无</li>
+<li>功能：可启动有故障</li>
+<li>故障类型：键盘缺帽、缺硬盘排线、无电池、缺右侧摇杆外观件</li>
+<li>备注：已解体</li>
+<li>预计处理方式：拼好机</li>
+</ol>
+</li>
+<li>SONY VAIO PCG-C1S&#x2F;mmx266&#x2F;忘了<ol>
+<li>来源：群友交换（用VGN-Z5）</li>
+<li>外观状态：一般，A壳有腐蚀、缺脚垫</li>
+<li>OS：Windows98（SONY OEM）</li>
+<li>功能：可启动有故障</li>
+<li>故障类型：无电池、cmos没电</li>
+<li>备注：无电池、无扩展内存</li>
+<li>预计处理方式：找电池；保留</li>
+</ol>
+</li>
+<li>SONY VAIO PCG-C1MR&#x2F;BP &#x2F;TM5600&#x2F;忘了<ol>
+<li>来源：货场</li>
+<li>外观状态：一般，屏幕偏光膜酸解</li>
+<li>OS：Windows me（SONY OEM）</li>
+<li>功能：全部正常</li>
+<li>备注：有原装恢复盘</li>
+<li>预计处理方式：保留</li>
+</ol>
+</li>
+<li>以下施工中，写到这里我觉得还是打个表吧累死了，以及后面需要补充所有VAIO的详细型号（因为索尼恢复盘的尿性）</li>
+<li>SONY VAIO PCG-C1MAH&#x2F;tm5800&#x2F;忘了</li>
+<li>SONY VAIO VGN-Z15&#x2F;P8400&#x2F;4G</li>
+<li>SONY VAIO VPCZ2&#x2F;忘了&#x2F;4G</li>
+<li>SONY VAIO SVZ13&#x2F;i5-3320m&#x2F;8G</li>
+<li>SONY VAIO VGN-G3&#x2F;su9600&#x2F;4G</li>
+<li>powerbook G4&#x2F;1.5&#x2F;1.25G</li>
+<li>powerbook G3 wallstreet&#x2F;233&#x2F;512m</li>
+<li>powerbook G3 kanga&#x2F;250&#x2F;160多具体忘了反正拉满了</li>
+<li>MacBook Pro a1261&#x2F;T9300&#x2F;3G</li>
+<li>ThinkPad X41 tablet&#x2F;1.5&#x2F;1.5G</li>
+<li>ThinkPad X61 tablet&#x2F;L7500&#x2F;2G</li>
+<li>富士通 P1620&#x2F;U7600&#x2F;2G</li>
 </ol>
 
                 
@@ -342,38 +432,13 @@
             <div>
               <div class="post-metas my-3">
   
-    <div class="post-meta mr-3 d-flex align-items-center">
-      <i class="iconfont icon-category"></i>
-      
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/tech/" class="category-chain-item">tech</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-    </div>
-  
   
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E5%8E%9F%E5%88%9B/" class="print-no-link">#原创</a>
+        <a href="/tags/hardware/" class="print-no-link">#hardware</a>
       
-        <a href="/tags/%E6%8A%98%E8%85%BE/" class="print-no-link">#折腾</a>
-      
-        <a href="/tags/software/" class="print-no-link">#software</a>
-      
-        <a href="/tags/linux-unix/" class="print-no-link">#linux/unix</a>
+        <a href="/tags/%E7%94%B5%E5%AD%90%E5%9E%83%E5%9C%BEcolle/" class="print-no-link">#电子垃圾colle</a>
       
     </div>
   
@@ -385,8 +450,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>“医生，我还有救吗？” - 修复误删audit导致的PAM认证出错</div>
-      <div>http://example.com/2024/11/26/“医生，我还有救吗？” - 修复误删audit导致的PAM认证出错/</div>
+      <div>对手上电子垃圾状态进行的粗略统计</div>
+      <div>http://example.com/2025/04/30/对手上电子垃圾状态进行的粗略统计/</div>
     </div>
     <div class="license-meta">
       
@@ -398,7 +463,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2024年11月26日</div>
+          <div>2025年4月30日</div>
         </div>
       
       
@@ -430,18 +495,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/04/30/%E5%AF%B9%E6%89%8B%E4%B8%8A%E7%94%B5%E5%AD%90%E5%9E%83%E5%9C%BE%E7%8A%B6%E6%80%81%E8%BF%9B%E8%A1%8C%E7%9A%84%E7%B2%97%E7%95%A5%E7%BB%9F%E8%AE%A1/" title="对手上电子垃圾状态进行的粗略统计">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">对手上电子垃圾状态进行的粗略统计</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/07/30/Nintendo%203DS%20&amp;%20new3DS%20LL%20-%20%E7%8E%A9%E6%B8%B8%E6%88%8F%E4%B8%8E%E7%9A%88%E4%BE%9D%E8%80%85%E7%8B%82%E7%83%AD/" title="Nintendo 3DS &amp; new3DS LL - “玩游戏与皈依者狂热”">
-                        <span class="hidden-mobile">Nintendo 3DS &amp; new3DS LL - “玩游戏与皈依者狂热”</span>
+                      <a href="/2024/11/26/%E2%80%9C%E5%8C%BB%E7%94%9F%EF%BC%8C%E6%88%91%E8%BF%98%E6%9C%89%E6%95%91%E5%90%97%EF%BC%9F%E2%80%9D%20-%20%E4%BF%AE%E5%A4%8D%E8%AF%AF%E5%88%A0audit%E5%AF%BC%E8%87%B4%E7%9A%84PAM%E8%AE%A4%E8%AF%81%E5%87%BA%E9%94%99/" title="“医生，我还有救吗？” - 修复误删audit导致的PAM认证出错">
+                        <span class="hidden-mobile">“医生，我还有救吗？” - 修复误删audit导致的PAM认证出错</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

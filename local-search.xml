@@ -4,6 +4,27 @@
   
   
   <entry>
+    <title>对手上电子垃圾状态进行的粗略统计</title>
+    <link href="/2025/04/30/%E5%AF%B9%E6%89%8B%E4%B8%8A%E7%94%B5%E5%AD%90%E5%9E%83%E5%9C%BE%E7%8A%B6%E6%80%81%E8%BF%9B%E8%A1%8C%E7%9A%84%E7%B2%97%E7%95%A5%E7%BB%9F%E8%AE%A1/"/>
+    <url>/2025/04/30/%E5%AF%B9%E6%89%8B%E4%B8%8A%E7%94%B5%E5%AD%90%E5%9E%83%E5%9C%BE%E7%8A%B6%E6%80%81%E8%BF%9B%E8%A1%8C%E7%9A%84%E7%B2%97%E7%95%A5%E7%BB%9F%E8%AE%A1/</url>
+    
+    <content type="html"><![CDATA[<p>不幸地，这篇文章已经太监了，让我们为它默哀两个普朗克时间<br>（还是得打个表才行，这么写用处不大）</p><h2 id="眼下"><a href="#眼下" class="headerlink" title="眼下"></a>眼下</h2><p>度过了一个充斥着求职琐事的三月和一个极度低效的四月，又在四月底的某天晚上下单了一台从垃圾场来的 SIEMENS NIXDORF Mobile 300之后，我瞥了一眼墙角的若干大纸箱，明白随着手上设备的增多，一些工作势在必行了。</p><h3 id="做什么"><a href="#做什么" class="headerlink" title="做什么"></a>做什么</h3><ol><li>打表，统计手上设备的状态</li><li>写这篇文章</li><li>按照<strong>状态</strong>对所有东西装箱分箱</li></ol><h2 id="简单的统计"><a href="#简单的统计" class="headerlink" title="简单的统计"></a>简单的统计</h2><p>下面是截至这篇文章发表之时对我手上的全部可以被归类为“vintage”的设备的粗略统计。包括他们的当下状态、数量、意向去向这类基本信息。我会分为<em>无法启动的设备</em>和<em>可以启动的设备</em>这两大类来写。<br>呃，虽然但是在本文里我连表格都懒得做，令人感叹。</p><h3 id="可以启动的设备"><a href="#可以启动的设备" class="headerlink" title="可以启动的设备"></a>可以启动的设备</h3><ol><li>IBM ThinkPad T43p，14’’&#x2F;2.13&#x2F;2G<ol><li>来源：货场</li><li>外观状态：佳，A面类肤质涂层有两道划痕</li><li>OS：Debian12</li><li>功能：可以启动，有故障</li><li>故障类型：不认硬盘，可能是南桥问题或者sata2pata的ic脱焊。后者可能性大</li><li>备注：光盘和u盘能认</li><li>预计处理方式：维修</li></ol></li><li>IBM ThinkPad X32&#x2F;1.7&#x2F;2G<ol><li>来源：货场；拼好机</li><li>外观状态：佳，缺螺丝盖片</li><li>OS：windowsXP SP1（IBM OEM）</li><li>功能：全部正常，网卡驱动没打</li><li>预计处理方式：改固态盘</li></ol></li><li>IBM ThinkPad A31p&#x2F;2.4&#x2F;2G<ol><li>来源：货场&amp;奸商；拼好机</li><li>外观状态：一般，缺螺丝盖片，屏幕轻度发黄</li><li>OS：windowsXP SP3（IBM OEM）</li><li>功能：可启动有故障</li><li>故障类型：电芯自锁</li><li>预计处理方式：修电池后保留</li></ol></li><li>ThinkPad W700ds(FVT)&#x2F;2.4(QX9200)&#x2F;fx3700m&#x2F;8G<ol><li>来源：货场</li><li>外观状态：差，防滚架一处断裂（显卡风扇处），电池仓有一处缺肉，A壳不可逆老化发白，屏幕偏光膜（内）大量污渍</li><li>OS：Windows vista（Lenovo OEM）</li><li>功能：可启动有故障</li><li>故障类型：小键盘损坏（排线断）、Fan ERR（有备件；有时fan1有时fan2，前者9成）</li><li>备注：FVT阶段工程机，单屏幕，无电池</li><li>预计处理方式：飞排线、换屏幕面板，维修后永久保留</li></ol></li><li>51NB ThinkPad X62&#x2F;i5 5600U&#x2F;16G<ol><li>来源：二手卖家</li><li>外观状态：差</li><li>OS：AOSC</li><li>功能：可启动有故障</li><li>故障类型：thinklight损坏</li><li>备注：服役中</li><li>预计处理方式：更换外壳和屏显后保留</li></ol></li><li>ThinkPad 760EL（太久没动配置忘了）<ol><li>来源：二手卖家；拼好机</li><li>外观状态：差</li><li>OS：暂无</li><li>功能：可启动有故障</li><li>故障类型：电池健康度耗尽、cmos没电</li><li>备注：<strong>镍氢忘拆了！镍氢忘拆了！镍氢忘拆了！</strong></li><li>预计处理方式：喷漆，拆镍氢、修电芯、换装CF card固态盘后保留</li></ol></li><li>TOSHIBA libretto W100（工程机)&#x2F;i5 520UM&#x2F;2G<ol><li>来源：货场</li><li>外观状态：一般</li><li>OS：Windows7（TOSHIBA OEM）</li><li>功能：可启动有故障</li><li>故障类型：电芯自锁、上屏触摸有断触（宽度2-3cm）</li><li>备注：所属工程阶段不明；因散热设计缺陷换成了量产版A壳，原壳装在配件机上</li><li>预计处理方式：装win8、修电芯，为不破坏工程机特殊外观上屏断触问题暂时弃疗；永久保留</li></ol></li><li>TOSHIBA libretto W100&#x2F;u5400&#x2F;2G<ol><li>来源：二手卖家</li><li>外观状态：极佳</li><li>OS：Windows7（TOSHIBA OEM）</li><li>功能：可启动有故障</li><li>故障类型：电芯自锁</li><li>预计处理方式：出售或赠送</li></ol></li><li>TOSHIBA libretto W100&#x2F;u5400&#x2F;2G<ol><li>来源：货场</li><li>外观状态：一般</li><li>OS：无</li><li>功能：可启动有故障</li><li>故障类型：触摸坏、屏线无、硬盘无、电池无</li><li>备注：a壳是工程机的；配件机</li><li>预计处理方式：保留</li></ol></li><li>SONY VAIO PCG-U1&#x2F;TM5800&#x2F;256m<ol><li>来源：货场</li><li>外观状态：较差：掉漆，缺少脚垫、垫片融化、缺键帽和摇杆</li><li>OS：无</li><li>功能：可启动有故障</li><li>故障类型：键盘缺帽、缺硬盘排线、无电池、缺右侧摇杆外观件</li><li>备注：已解体</li><li>预计处理方式：拼好机</li></ol></li><li>SONY VAIO PCG-C1S&#x2F;mmx266&#x2F;忘了<ol><li>来源：群友交换（用VGN-Z5）</li><li>外观状态：一般，A壳有腐蚀、缺脚垫</li><li>OS：Windows98（SONY OEM）</li><li>功能：可启动有故障</li><li>故障类型：无电池、cmos没电</li><li>备注：无电池、无扩展内存</li><li>预计处理方式：找电池；保留</li></ol></li><li>SONY VAIO PCG-C1MR&#x2F;BP &#x2F;TM5600&#x2F;忘了<ol><li>来源：货场</li><li>外观状态：一般，屏幕偏光膜酸解</li><li>OS：Windows me（SONY OEM）</li><li>功能：全部正常</li><li>备注：有原装恢复盘</li><li>预计处理方式：保留</li></ol></li><li>以下施工中，写到这里我觉得还是打个表吧累死了，以及后面需要补充所有VAIO的详细型号（因为索尼恢复盘的尿性）</li><li>SONY VAIO PCG-C1MAH&#x2F;tm5800&#x2F;忘了</li><li>SONY VAIO VGN-Z15&#x2F;P8400&#x2F;4G</li><li>SONY VAIO VPCZ2&#x2F;忘了&#x2F;4G</li><li>SONY VAIO SVZ13&#x2F;i5-3320m&#x2F;8G</li><li>SONY VAIO VGN-G3&#x2F;su9600&#x2F;4G</li><li>powerbook G4&#x2F;1.5&#x2F;1.25G</li><li>powerbook G3 wallstreet&#x2F;233&#x2F;512m</li><li>powerbook G3 kanga&#x2F;250&#x2F;160多具体忘了反正拉满了</li><li>MacBook Pro a1261&#x2F;T9300&#x2F;3G</li><li>ThinkPad X41 tablet&#x2F;1.5&#x2F;1.5G</li><li>ThinkPad X61 tablet&#x2F;L7500&#x2F;2G</li><li>富士通 P1620&#x2F;U7600&#x2F;2G</li></ol>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>hardware</tag>
+      
+      <tag>电子垃圾colle</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>“医生，我还有救吗？” - 修复误删audit导致的PAM认证出错</title>
     <link href="/2024/11/26/%E2%80%9C%E5%8C%BB%E7%94%9F%EF%BC%8C%E6%88%91%E8%BF%98%E6%9C%89%E6%95%91%E5%90%97%EF%BC%9F%E2%80%9D%20-%20%E4%BF%AE%E5%A4%8D%E8%AF%AF%E5%88%A0audit%E5%AF%BC%E8%87%B4%E7%9A%84PAM%E8%AE%A4%E8%AF%81%E5%87%BA%E9%94%99/"/>
     <url>/2024/11/26/%E2%80%9C%E5%8C%BB%E7%94%9F%EF%BC%8C%E6%88%91%E8%BF%98%E6%9C%89%E6%95%91%E5%90%97%EF%BC%9F%E2%80%9D%20-%20%E4%BF%AE%E5%A4%8D%E8%AF%AF%E5%88%A0audit%E5%AF%BC%E8%87%B4%E7%9A%84PAM%E8%AE%A4%E8%AF%81%E5%87%BA%E9%94%99/</url>
