@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://github.com/t-vm/img_hosting/blob/main/25_7/mbp17/1297_01.png?raw=true">
 <meta property="article:published_time" content="2025-07-12T12:23:31.000Z">
-<meta property="article:modified_time" content="2025-07-12T13:39:04.049Z">
+<meta property="article:modified_time" content="2025-07-12T13:42:08.777Z">
 <meta property="article:author" content="TVEM">
 <meta property="article:tag" content="折腾">
 <meta property="article:tag" content="hardware">
@@ -238,7 +238,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          998 字
+          989 字
         
       </span>
     
@@ -336,7 +336,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">sed -i <span class="hljs-string">&#x27;s/GRUB_CMDLINE_LINUX_DEFAULT=\&quot;/&amp;amdgpu.dc=0 radeon.runpm=0 radeon.modeset=0 /&#x27;</span> /etc/default/grub<br><br>update-grub<br></code></pre></td></tr></table></figure>
 
 <p>黑名单屏蔽驱动：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 7. 黑名单屏蔽AMD驱动</span><br><span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;blacklist radeon&quot;</span> &gt;&gt; /etc/modprobe.d/blacklist.conf<br><span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;blacklist amdgpu&quot;</span> &gt;&gt; /etc/modprobe.d/blacklist.conf<br><br>update-initramfs -u<br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;blacklist radeon&quot;</span> &gt;&gt; /etc/modprobe.d/blacklist.conf<br><span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;blacklist amdgpu&quot;</span> &gt;&gt; /etc/modprobe.d/blacklist.conf<br><br>update-initramfs -u<br></code></pre></td></tr></table></figure>
 
 <p>现在一切大功告成，<code>exit</code>退出chroot并从硬盘启动。现在可以正常启动DE并看到没有异样的图形了。<br><img src="https://github.com/t-vm/img_hosting/blob/main/25_7/mbp17/1297_01.png?raw=true" srcset="/img/loading.gif" lazyload alt="bc"></p>
 <h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>现在出现了两个新问题，虽然对于mac安装linux而言都是常见情况，但也并不是很快可以解决的，暂时留到以后处理：</p>
